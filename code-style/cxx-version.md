@@ -19,5 +19,62 @@ title: Используемый стандарт
 Правильно написанная библиотека/приложение должно компилироваться **всеми основными компиляторами** (*GCC* → *Clang* → *MSVC* в порядке убывания приоритета)
 
 ### Нестандартные расширения компилятора
-##### Атрибуты GCC
+#### Атрибуты GCC
 Атрибуты (ключевое слово `__attribute__`) находятся под запретом, так как не поддерживаются компиляторами, отличными от GCC.
+
+##### Как заменить `__attribute__((constuctor))`?
+
+Этот атрибут обычно используется для автоматического вызова какой-либо свободной функции **при линковке**.
+###### Неправильный код
+```cpp 
+auto __attribute__((constructor)) print_version() -> void {
+	fmt::print("loaded library {} version {}.{}", 
+		PROJECT_NAME, 
+		PROJECT_VERSION_MAJOR,
+		PROJECT_VERSION_MINOR
+	);
+}
+```
+Данный код не будет скомпилирован компиляторами MSVC и, потенциально, Clang.
+
+###### Правильный код
+```cpp
+struct constructor {
+	explicit constructor(void (*f)(void)) { f(); }
+}
+
+static constructor print_version(+[]() -> void {
+	fmt::print("loaded library {} version {}.{}", 
+		PROJECT_NAME, 
+		PROJECT_VERSION_MAJOR,
+		PROJECT_VERSION_MINOR
+	);
+});
+```
+Семантический смысл остается тем же, но этот вариант скомпилируется любым из современных компиляторов С++. 
+Если вам требуется вызывать `constructor` часто, то `struct constructor` можно параметризировать через шаблон.
+
+##### Как заменить `__attribute__((packed))`?
+Этот атрибут используется для того, чтобы убрать паддинг (отступ) между членами внутри структуры.
+###### Неправильный код
+```cpp
+struct Data 
+{
+	int a;
+	bool b;
+	float c;
+	long long d;
+} __attribute__((packed));
+```
+###### Правильный код
+```cpp
+#pragma pack(push, 1)
+struct [[gnu::packed]] Data 
+{
+	int a;
+	bool b;
+	float c;
+	long long d;
+};
+#pragma pack(pop)
+```
