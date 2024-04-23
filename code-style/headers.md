@@ -10,7 +10,7 @@ title: Заголовочные файлы
 - [[#Включение других заголовочных файлов|Включение других заголовочных файлов]]
 			- [[#Неправильный код|Неправильный код]]
 			- [[#Правильный код|Правильный код]]
-- [[#Объявления наперед (*forward-declarations*)|Объявления наперед (*forward-declarations*)]]
+- [[#Объявления наперед (forward-declarations)|Объявления наперед (forward-declarations)]]
 - [[#Порядок включений|Порядок включений]]
 
 ### Общая информация
@@ -68,7 +68,7 @@ std::string a = "qwe";
 std::cout << a << std::endl;
 ```
 
-### Объявления наперед (*forward-declarations*)
+### Объявления наперед (forward-declarations)
 Используйте объявления наперед там, где это возможно.
 
 > [!caution] Предупреждение
@@ -90,9 +90,8 @@ std::cout << a << std::endl;
 - Приватные заголовки *текущей* библиотеки/проекта: `<meow_impl.h>`
 - Условные включения (т.е. обернутые в `#if`/`#endif`)
 
-```ad-example
-title: Пример
-~~~cpp
+###### Пример
+```cpp
 #include <cstdlib>
 #include <cstdbool>
 #include <string>
@@ -113,7 +112,6 @@ title: Пример
 #if defined(CATS)
 # include <this_project/cat/purr.h>
 #endif
-~~~
 ```
 
 

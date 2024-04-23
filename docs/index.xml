@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>🪴 Quartz 4.0</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on 🪴 Quartz 4.0</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Используемый стандарт</title>
+    <link>https://quartz.jzhao.xyz/cxx-version</link>
+    <guid>https://quartz.jzhao.xyz/cxx-version</guid>
+    <description>Используемый стандарт С++, компилятор и расширения Стандарт C++ На данный момент основным используемым стандартом является C++20 с незначительными отсутствующими частями ...</description>
+    <pubDate>Tue, 23 Apr 2024 13:27:25 GMT</pubDate>
+  </item><item>
+    <title>Заголовочные файлы</title>
+    <link>https://quartz.jzhao.xyz/headers</link>
+    <guid>https://quartz.jzhao.xyz/headers</guid>
+    <description>Заголовочные файлы Общая информация Расширения файлов Header-guard - Неправильный код - Правильный код Включение других заголовочных файлов - Неправильный код - Правильный ...</description>
+    <pubDate>Tue, 23 Apr 2024 13:27:25 GMT</pubDate>
+  </item><item>
+    <title>Radar MMS C++ Style Guide</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description>Radar MMS C++ Style Guide Содержание Стандарт С++Заголовочные файлыРасширения файловЗащита от повторного включенияВключение других заголовочных файловОбъявления напередПорядок ...</description>
+    <pubDate>Tue, 23 Apr 2024 13:27:25 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0c3e97ea354b15e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "headers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,10 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e1cd64630c48349",
+  "active": "a0c3e97ea354b15e",
   "lastOpenFiles": [
-    "index.md",
+    "cxx-version.md",
     "headers.md",
-    "cxx-version.md"
+    "index.md"
   ]
 }
