@@ -10,31 +10,31 @@
     <link>https://quartz.jzhao.xyz/lang-features</link>
     <guid>https://quartz.jzhao.xyz/lang-features</guid>
     <description>Rvalue-ссылки Используйте rvalue-ссылки только в следующих случаях: Для определения move-конструктора и move-assign оператора Для определения методов, которые оставляют ...</description>
-    <pubDate>Tue, 23 Apr 2024 15:17:02 GMT</pubDate>
+    <pubDate>Tue, 23 Apr 2024 16:07:50 GMT</pubDate>
   </item><item>
     <title>Область видимости</title>
     <link>https://quartz.jzhao.xyz/scoping</link>
     <guid>https://quartz.jzhao.xyz/scoping</guid>
     <description>Пространства имен За редкими исключениями, ваш код должен находиться в пространстве имен. Хорошее пространство имен содержит: Имя библиотеки/проекта Путь к заголовочному файлу Пример Если у вас есть заголовочный файл, принадлежащий к библиотеке animals и лежащий в папке include/animals/mammals/cute/cat.h, то идеальным пространством имен будет: animals::mammals::cute.</description>
-    <pubDate>Tue, 23 Apr 2024 15:17:02 GMT</pubDate>
+    <pubDate>Tue, 23 Apr 2024 16:07:50 GMT</pubDate>
   </item><item>
     <title>Используемый стандарт</title>
     <link>https://quartz.jzhao.xyz/cxx-version</link>
     <guid>https://quartz.jzhao.xyz/cxx-version</guid>
     <description>Используемый стандарт С++, компилятор и расширения Стандарт C++ На данный момент основным используемым стандартом является C++20 с незначительными отсутствующими частями ...</description>
-    <pubDate>Tue, 23 Apr 2024 15:17:02 GMT</pubDate>
+    <pubDate>Tue, 23 Apr 2024 16:07:50 GMT</pubDate>
   </item><item>
     <title>Заголовочные файлы</title>
     <link>https://quartz.jzhao.xyz/headers</link>
     <guid>https://quartz.jzhao.xyz/headers</guid>
     <description>...</description>
-    <pubDate>Tue, 23 Apr 2024 15:17:02 GMT</pubDate>
+    <pubDate>Tue, 23 Apr 2024 16:07:50 GMT</pubDate>
   </item><item>
     <title>Radar MMS C++ Style Guide</title>
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
     <description>Содержание Стандарт С++Заголовочные файлыРасширения файловЗащита от повторного включенияВключение файловОбъявления напередПорядок включенийОбласть видимостиПространства ...</description>
-    <pubDate>Tue, 23 Apr 2024 15:17:02 GMT</pubDate>
+    <pubDate>Tue, 23 Apr 2024 16:07:50 GMT</pubDate>
   </item>
     </channel>
   </rss>
