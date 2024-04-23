@@ -88,6 +88,34 @@ std::cout << a << std::endl;
 	- Включение по исходному заголовочному файлу: `<qstring.h>`, `<qobject.h>`
 - Публичные заголовки *текущей* библиотеки/проекта: `<cats/meow.h>`
 - Приватные заголовки *текущей* библиотеки/проекта: `<meow_impl.h>`
+- Условные включения (т.е. обернутые в `#if`/`#endif`)
+
+```ad-example
+title: Пример
+~~~cpp
+#include <cstdlib>
+#include <cstdbool>
+#include <string>
+#include <iostream>
+#include <windows.h>
+#include <python.h>
+#include <gtest/gtest.h>
+#include <leaf/leaf.h>
+#include <leaf/utils/rtti.h>
+#include <qcoreapplication.h>
+#include <qobject.h>
+#include <qqmlapplicationengine.h>
+#include <this_project/cat/meow.h>
+#include <this_project/dog/bark.h>
+#include <cat/meow_p.h>
+#include <dog/bark_p.h>
+
+#if defined(CATS)
+# include <this_project/cat/purr.h>
+#endif
+~~~
+```
+
 
 > [!tip] Замечание
 > Не  допускается использование относительных путей в директиве `#include`.
