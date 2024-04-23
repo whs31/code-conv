@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a0c3e97ea354b15e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "headers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "headers.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "headers.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "headers.md"
+                "file": "index.md"
               }
             }
           }
@@ -159,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0c3e97ea354b15e",
+  "active": "7e1cd64630c48349",
   "lastOpenFiles": [
+    "scoping.md",
+    "index.md",
     "cxx-version.md",
-    "headers.md",
-    "index.md"
+    "headers.md"
   ]
 }
