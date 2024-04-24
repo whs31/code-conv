@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2d1ab618d9adea46",
+        "id": "64068ea30756e446",
         "type": "tabs",
         "children": [
           {
-            "id": "b5a0b0e3ca01949a",
+            "id": "b6c6b7a18c6124f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97fc0a1192d1acb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cmake/commands.md",
+                "file": "CMake/commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cmake/commands.md",
+                "file": "CMake/commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cmake/commands.md",
+                "file": "CMake/commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cmake/commands.md"
+                "file": "CMake/commands.md"
               }
             }
           }
@@ -159,9 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97fc0a1192d1acb0",
+  "active": "b6c6b7a18c6124f6",
   "lastOpenFiles": [
+    "C++/formatting.md",
+    "C++/naming.md",
+    "C++/lang-features.md",
+    "C++/scoping.md",
+    "C++/functions.md",
+    "C++/headers.md",
+    "C++/cxx-version.md",
     "index.md",
+    "CMake/commands.md",
+    "C++",
+    "Новая папка",
+    "CMake",
     "cmake/commands.md",
     "cmake",
     "formatting.md",

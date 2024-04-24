@@ -101,7 +101,7 @@ enum class BitFlags {
 ```
 
 ### Макросы
-[[lang-features#Макросы|Макросы - это плохо!]]
+[[C++/lang-features#Макросы|Макросы - это плохо!]]
 
 Однако, если вы все же решили объявить макрос, то допускается 3 варианта именования:
 - *SCREAMING_SNAKE_CASE*
@@ -128,4 +128,4 @@ enum class BitFlags {
 - `catlib`
 - `radar-mms-library3`
 
-#### Далее: [[formatting|Форматирование кода]]
+#### Далее: [[C++/formatting|Форматирование кода]]

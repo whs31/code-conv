@@ -161,4 +161,4 @@ struct TEST_EXPORT Dog { /* ... */ };
 - Макросы `__COUNTER__`, `__PRETTY_FUNCTION__`
 - *Elvis-operator* (`?:`): [Wikipedia](https://en.wikipedia.org/wiki/Elvis_operator)
 
-#### Далее: [[headers|Заголовочные файлы]]
+#### Далее: [[C++/headers|Заголовочные файлы]]
