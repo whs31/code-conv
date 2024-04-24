@@ -43,4 +43,4 @@ class QMLClass : public QObject {
 // NOLINTEND
 ```
 
-#### Далее: [[C++/lang-features|Возможности С++]]
+#### Далее: [[lang-features|Возможности С++]]

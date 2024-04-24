@@ -10,55 +10,55 @@
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
     <description>...</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
-  </item><item>
-    <title>5. Соглашение по именованию</title>
-    <link>https://quartz.jzhao.xyz/C++/naming</link>
-    <guid>https://quartz.jzhao.xyz/C++/naming</guid>
-    <description>Файлы Файлы в С++ должны именоваться в нижнем регистре и могут содержать нижние подчеркивания (_). Это правило также распостраняется и на папки. Файлы исходного кода должны иметь расширение .cc.</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>3. Область видимости</title>
     <link>https://quartz.jzhao.xyz/C++/scoping</link>
     <guid>https://quartz.jzhao.xyz/C++/scoping</guid>
     <description>Пространства имен За редкими исключениями, ваш код должен находиться в пространстве имен. Хорошее пространство имен содержит: Имя библиотеки/проекта Путь к заголовочному файлу Пример Если у вас есть заголовочный файл, принадлежащий к библиотеке animals и лежащий в папке include/animals/mammals/cute/cat.h, то идеальным пространством имен будет: animals::mammals::cute.</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>1. Основные команды CMake</title>
     <link>https://quartz.jzhao.xyz/CMake/commands</link>
     <guid>https://quartz.jzhao.xyz/CMake/commands</guid>
     <description></description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
-  </item><item>
-    <title>1. Используемый стандарт</title>
-    <link>https://quartz.jzhao.xyz/C++/cxx-version</link>
-    <guid>https://quartz.jzhao.xyz/C++/cxx-version</guid>
-    <description>Используемый стандарт С++, компилятор и расширения Стандарт C++ На данный момент основным используемым стандартом является C++20 с незначительными отсутствующими частями ...</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>6. Форматирование кода</title>
     <link>https://quartz.jzhao.xyz/C++/formatting</link>
     <guid>https://quartz.jzhao.xyz/C++/formatting</guid>
     <description>Отступы и табуляция Как и Google, мы используем 2 пробела на отступ. Секции области видимости в классах также должны иметь дополнительный отступ в 2 пробела.</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>4. Функции</title>
     <link>https://quartz.jzhao.xyz/C++/functions</link>
     <guid>https://quartz.jzhao.xyz/C++/functions</guid>
     <description>Входные и выходные параметры Мы никогда не используем указатели как выходные параметры функции. Все аргументы, передаваемые в функцию, являются ее входными параметрами.</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>2. Заголовочные файлы</title>
     <link>https://quartz.jzhao.xyz/C++/headers</link>
     <guid>https://quartz.jzhao.xyz/C++/headers</guid>
     <description>...</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item><item>
     <title>5. Возможности языка</title>
     <link>https://quartz.jzhao.xyz/C++/lang-features</link>
     <guid>https://quartz.jzhao.xyz/C++/lang-features</guid>
     <description>Rvalue-ссылки Используйте rvalue-ссылки только в следующих случаях: Для определения move-конструктора и move-assign оператора Для определения методов, которые оставляют ...</description>
-    <pubDate>Wed, 24 Apr 2024 14:57:45 GMT</pubDate>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
+  </item><item>
+    <title>5. Соглашение по именованию</title>
+    <link>https://quartz.jzhao.xyz/C++/naming</link>
+    <guid>https://quartz.jzhao.xyz/C++/naming</guid>
+    <description>Файлы Файлы в С++ должны именоваться в нижнем регистре и могут содержать нижние подчеркивания (_). Это правило также распостраняется и на папки. Файлы исходного кода должны иметь расширение .cc.</description>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
+  </item><item>
+    <title>1. Используемый стандарт</title>
+    <link>https://quartz.jzhao.xyz/C++/cxx-version</link>
+    <guid>https://quartz.jzhao.xyz/C++/cxx-version</guid>
+    <description>Используемый стандарт С++, компилятор и расширения Стандарт C++ На данный момент основным используемым стандартом является C++20 с незначительными отсутствующими частями ...</description>
+    <pubDate>Wed, 24 Apr 2024 15:02:17 GMT</pubDate>
   </item>
     </channel>
   </rss>

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CMake/commands.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CMake/commands.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CMake/commands.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CMake/commands.md"
+                "file": "index.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "b6c6b7a18c6124f6",
   "lastOpenFiles": [
-    "C++/formatting.md",
+    "CMake/commands.md",
+    "C++/scoping.md",
     "C++/naming.md",
     "C++/lang-features.md",
-    "C++/scoping.md",
-    "C++/functions.md",
     "C++/headers.md",
+    "C++/functions.md",
+    "C++/formatting.md",
     "C++/cxx-version.md",
     "index.md",
-    "CMake/commands.md",
     "C++",
     "Новая папка",
     "CMake",

@@ -128,4 +128,4 @@ constexpr auto PROJECT_NAME = "meow"sv;
 constinit thread_local auto cat = /* ... */;
 ```
 
-#### Далее: [[C++/functions|Функции]]
+#### Далее: [[functions|Функции]]

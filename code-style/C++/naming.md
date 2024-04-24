@@ -128,4 +128,4 @@ enum class BitFlags {
 - `catlib`
 - `radar-mms-library3`
 
-#### Далее: [[C++/formatting|Форматирование кода]]
+#### Далее: [[formatting|Форматирование кода]]
