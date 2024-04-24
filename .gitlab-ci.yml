@@ -9,7 +9,6 @@ build:
   stage: build
   tags: [dev-utils]
   before_script:
-    - apt-get update -q && apt-get install -y nodejs npm
     - npm install -g n
     - n $NODE_VERSION
     - hash -r
@@ -23,13 +22,9 @@ build:
     paths:
       - ~/.npm/
     key: "${CI_COMMIT_REF_SLUG}-node-${CI_COMMIT_REF_NAME}"
-  tags:
-    - docker
  
 pages:
   stage: deploy
-  rules:
-    - if: '$CI_COMMIT_REF_NAME == "v4"'
   script:
     - echo "Deploying to GitLab Pages..."
   artifacts:
