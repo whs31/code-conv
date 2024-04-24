@@ -61,7 +61,7 @@ class File {
   private:
     File();
   public:
-    [[nodiscard]] static auto open() -> expected<void, string>;
+    [[nodiscard]] static auto open() -> expected<File, string>;
 };
 ```
 
@@ -75,10 +75,10 @@ class File {
   private:
     File();
   public:
-    [[nodiscard]] static auto open() -> absl::Status {
+    [[nodiscard]] static auto open() -> absl::StatusOr<File> {
       if(/* ... */)
         return absl::NotFoundError("bad file path");
-      return absl::OkStatus();
+      return absl::OkStatus(/* ... */);
     }
 }
 ```
@@ -285,3 +285,10 @@ namespace leaf::types {
   using f128 = long double; ///< 128-bit число с плавающей точкой (`long double`)
 }
 ```
+
+##### 32- и 64- битные архитектуры
+Ваш код должен работать одинаково и на 32-разрядных, и на 64-разрядных архитектурах.
+Общие советы для достижения этой цели:
+- Используйте `size_t` для индексирования по коллекциям
+- Используйте `intptr_t`/`uintptr_t` в случаях, когда требуется целое число размером с регистр процессора (`sizeof(void)`)
+- Используйте `ptrdiff_t` для обозначения разности между двумя указателями (e.g. `std::distance`)
