@@ -42,3 +42,5 @@ class QMLClass : public QObject {
 // ReSharper restore All
 // NOLINTEND
 ```
+
+#### Далее: [[lang-features|Возможности С++]]

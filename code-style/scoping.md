@@ -127,3 +127,5 @@ constexpr auto PROJECT_NAME = "meow"sv;
 ```cpp
 constinit thread_local auto cat = /* ... */;
 ```
+
+#### Далее: [[functions|Функции]]

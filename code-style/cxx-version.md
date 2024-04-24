@@ -160,3 +160,5 @@ struct TEST_EXPORT Dog { /* ... */ };
 - Ассемблерные вставки
 - Макросы `__COUNTER__`, `__PRETTY_FUNCTION__`
 - *Elvis-operator* (`?:`): [Wikipedia](https://en.wikipedia.org/wiki/Elvis_operator)
+
+#### Далее: [[headers|Заголовочные файлы]]
