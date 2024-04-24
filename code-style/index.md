@@ -7,11 +7,9 @@ tags:
   - docs
   - code-style
 ---
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&lgoColor=white)
 # Содержание
 # C++
-Общие положения по стилю кода на С++. 
-
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&lgoColor=white)
 #### **[[cxx-version|Стандарт С++]]**
 - **[[cxx-version#Стандарт C++|Используемый стандарт]]**
 - **[[cxx-version#Компилятор|Компилятор]]**
