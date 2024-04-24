@@ -1,7 +1,8 @@
 import shutil
 import os
 
-QUARTZ_PATH = r"C:\Users\whs31\quartz"
+#QUARTZ_PATH = r"C:\Users\whs31\quartz"
+QUARTZ_PATH = r"D:\share\quartz\quartz"
 
 def main():
     if not os.path.exists(QUARTZ_PATH):

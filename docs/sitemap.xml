@@ -1,16 +1,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://quartz.jzhao.xyz/cxx-version</loc>
-    <lastmod>2024-04-23T16:07:50.407Z</lastmod>
+    <lastmod>2024-04-24T13:13:48.151Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/formatting</loc>
+    <lastmod>2024-04-24T13:13:48.151Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/functions</loc>
+    <lastmod>2024-04-24T13:13:48.152Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/headers</loc>
-    <lastmod>2024-04-23T16:07:50.407Z</lastmod>
+    <lastmod>2024-04-24T13:13:48.152Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/</loc>
-    <lastmod>2024-04-23T16:07:50.407Z</lastmod>
+    <lastmod>2024-04-24T13:13:48.152Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/lang-features</loc>
-    <lastmod>2024-04-23T16:07:50.408Z</lastmod>
+    <lastmod>2024-04-24T13:13:48.152Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/naming</loc>
+    <lastmod>2024-04-24T13:13:48.152Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/scoping</loc>
-    <lastmod>2024-04-23T16:07:50.408Z</lastmod>
+    <lastmod>2024-04-24T13:13:48.153Z</lastmod>
   </url></urlset>
