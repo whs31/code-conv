@@ -46,7 +46,7 @@ struct constructor {
 	explicit constructor(void (*f)(void)) { f(); }
 };
 
-static constructor print_version(+[]() -> void {
+static auto print_version = constructor(+[]() -> void {
 	fmt::print("loaded library {} version {}.{}", 
 		PROJECT_NAME, 
 		PROJECT_VERSION_MAJOR,
