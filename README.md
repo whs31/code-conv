@@ -1,1 +1,2 @@
+[![Deploy Quartz site to GitHub Pages](https://github.com/whs31/guidelines/actions/workflows/deploy.yml/badge.svg)](https://github.com/whs31/guidelines/actions/workflows/deploy.yml)
 # [Основной сайт с документацией](https://whs31.github.io/guidelines)
