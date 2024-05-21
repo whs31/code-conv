@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Conan/artifactory.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Conan/artifactory.md",
+                "file": "content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Conan/artifactory.md",
+                "file": "content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Conan/artifactory.md"
+                "file": "content/index.md"
               }
             }
           }
@@ -148,14 +148,15 @@
   },
   "active": "6f8142f6c7ed857f",
   "lastOpenFiles": [
+    "content/CMake/intro.md",
+    "content/index.md",
+    "content/CMake/commands.md",
     "content/Conan/intro.md",
     "content/Conan/artifactory.md",
-    "README.md",
-    "content/CMake/commands.md",
-    "content/Conan",
     "content/Protobuf & gRPC/codegen.md",
+    "README.md",
+    "content/Conan",
     "content/C++/scoping.md",
-    "content/index.md",
     "content/Protobuf & gRPC",
     "content/C++/cxx-version.md",
     "CODE_OF_CONDUCT.md",

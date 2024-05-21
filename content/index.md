@@ -57,7 +57,9 @@ tags:
 - *[[C++/formatting#Отступы и табуляция|Отступы и табуляция]]*
 - [[C++/formatting#Clang-format|Clang-format]]
 
-## CMake
-#### [[CMake/commands|Основные команды]]
-- *[[CMake/commands#Общая информация|Общая информация]]*
-- *[[CMake/commands#Конфигурация|Конфигурация]]*
+## Оглавление
+
+|                                                                                                          | Ссылка                     | Краткое описание                      |
+| -------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------- |
+| ![](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)     | **[[CMake/intro\|CMake]]** | Информация о системе сборки CMake     |
+| ![Static Badge](https://img.shields.io/badge/Conan-green?style=for-the-badge&logo=conan&logoColor=white) | **[[Conan/intro\|Conan]]** | Информация о пакетном менеджере Conan |

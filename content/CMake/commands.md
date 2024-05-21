@@ -1,5 +1,5 @@
 ---
-title: 1. Основные команды CMake
+title: 2. Основные команды CMake
 tags:
   - cmake
 ---
