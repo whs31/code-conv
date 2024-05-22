@@ -69,6 +69,7 @@ project(math-eigen                     # название проекта
   HOMEPAGE_URL "github.com/math/eigen" # домашняя страница (напр. репозиторий)
   LANGUAGES C CXX                      # используемые языки
 )
+set(PROJECT_NAMESPACE "math::")
 ```
 
 > [!warning]
@@ -88,4 +89,44 @@ project(math-eigen                     # название проекта
 > Если вы также планируете использовать пакетный менеджер, то убедитесь, что версия вашего проекта в CMake и в файле пакетного менеджера (напр. в *conanfile.py*) совпадает.
 > Этот процесс можно автоматизировать. Подробнее: ((здесь будет ссылка)).
 
+#### Стандарт С, С++
+Всегда указывайте [[C++/cxx-version|минимальный стандарт С++]], который используется в проекте. Корректный способ сделать это:
+```cmake
+if(NOT CMAKE_CXX_STANDARD)      # не будет перезаписывать уже заданный стандарт
+  set(CMAKE_CXX_STANDARD 20)    # c++20
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_EXTENSIONS OFF) # выключает нестандартные расширения 
+
+  # опциональный вывод стандарта в консоль
+  message(STATUS "[${PROJECT_NAME}] c++ standard: ${CMAKE_CXX_STANDARD}")
+endif()  
+```
+
+Также хорошей практикой будет позаботиться о пользователях MSVC, добавив следующую строчку после указания стандарта:
+```cmake
+if("${CMAKE_GENERATOR}" MATCHES "^Visual Studio")
+  set(CMAKE_GENERATOR_PLATFORM "x64" CACHE STRING "" FORCE)
+endif()
+```
+
+#### Настройка окружения
+##### fPIC
+Всегда включайте *fPIC*, если не собираете приложение или shared-only библиотеку. Подробнее про *fPIC* можно прочитать здесь: [ссылка](https://habr.com/ru/companies/badoo/articles/324616/).
+
+Для включения используйте следующую встроенную опцию CMake:
+```cmake
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# опциональный вывод информации об этом в консоль cmake:
+message(STATUS "[${PROJECT_NAME}] fpic status: ${CMAKE_POSITION_INDEPENDENT_CODE}")
+```
+
+##### MOC/RCC
+В проектах, использующих Qt, необходимо явно включать препроцессинг с помощью утилит `moc`, `rcc` и, опционально, `uic`.
+Для этого используйте следующие опции:
+```cmake
+set(CMAKE_AUTOMOC ON)    # включает moc
+set(CMAKE_AUTORCC ON)    # включает rcc
+set(CMAKE_AUTOUIC ON)    # включает uic (если используются qt widgets)
+```
 

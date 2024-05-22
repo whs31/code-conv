@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "84d634892842899a",
+        "id": "16d9a693e5bc564f",
         "type": "tabs",
         "children": [
           {
-            "id": "709a989df699b0c5",
+            "id": "802b2f1647839829",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,16 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "709a989df699b0c5",
+  "active": "802b2f1647839829",
   "lastOpenFiles": [
     "CMake/commands.md",
     "CMake/common-tips.md",
     "CMake/intro.md",
     "index.md",
+    "Protobuf & gRPC/codegen.md",
+    "C++/cxx-version.md",
     "C++/intro.md",
     "Conan/intro.md",
     "C++/lang-features.md",
-    "C++/cxx-version.md",
     "C++/scoping.md",
     "C++/naming.md",
     "C++/headers.md",
