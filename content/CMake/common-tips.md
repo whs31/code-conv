@@ -170,16 +170,16 @@ find_package(Boost 1.67.0 REQUIRED)
 > [!note]
 > Если вы используете *Boost::ASIO*, то не забудьте также произвести линковку с системными библиотеками потоков на ОС Windows:
 > ```cmake
-if(WIN32)
-  target_link_libraries(${PROJECT_NAME} PRIVATE ws2_32 wsock32)
-endif()
+> if(WIN32)
+>   target_link_libraries(${PROJECT_NAME} PRIVATE ws2_32 wsock32)
+> endif()
 > ```
 > 
 > Также не забудьте добавить данное условие, если используете *ASIO*:
 > ```cmake
-if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-  target_compile_definitions(${PROJECT_NAME} PRIVATE -DBOOST_ASIO_HAS_STD_INVOKE_RESULT=1)
-endif()
+> if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+>   target_compile_definitions(${PROJECT_NAME} PRIVATE -DBOOST_ASIO_HAS_STD_INVOKE_RESULT=1)
+> endif()
 > ```
 > Оно необходимо для корректной совместимости со стандартной библиотекой **llvm**.
 
@@ -192,3 +192,53 @@ find_package(Protobuf REQUIRED)
 ```
 
 ##### gRPC
+```cmake
+find_package(Protobuf REQUIRED)
+find_package(gRPC REQUIRED)
+# доступные цели линковки:
+# - protobuf::libprotobuf
+# - protobuf::libprotoc
+# - gRPC::grpc
+# - gRPC::grpc++
+```
+
+> [!note]
+> Для возможности собирать проект, использующий *gRPC* в режиме *Debug*, необходимо добавить следующие строчки:
+> ```cmake
+> if(Protobuf_VERSION VERSION_GREATER_EQUAL 4)
+>   target_link_libraries(${PROJECT_NAME} PUBLIC absl::log_internal_check_op)
+> endif()  
+> ```
+
+##### Системный интерпретатор Python
+```cmake
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
+```
+
+Если интерпретатор был найден, то он будет доступен через переменную `${Python3_EXECUTABLE}`:
+```cmake
+execute_process(
+  COMMAND ${Python3_EXECUTABLE} --version
+  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+)
+```
+
+##### Qt
+```cmake
+find_package(QT NAMES Qt5 COMPONENTS Core) # Qt5 можно заменить на Qt6
+find_package(Qt5 COMPONENTS 
+  Core
+  Quick
+  Network
+)
+# доступные цели линковки:
+# - Qt5::Core
+# - Qt5::Quick
+# - Qt5::Network
+```
+
+> [!attention]
+> Не используйте синтаксис `find_package(QT NAMES Qt5 Qt6 ...)`.
+> Если ваш проект собирается как Qt5, так и Qt6, используйте опции CMake, чтобы определить, какая версия Qt будет использоваться. В противном случае это приведет к проблемам при линковке.
+> 
+> Предпочитайте использовать либо только Qt5, либо (*если это возможно на вашей платформе*) только Qt6.
