@@ -15,6 +15,7 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
         <p>
+          Автор: <b>Рязанцев Дмитрий</b> (<code>@whs31</code> - <a href="https://github.com/whs31">GitHub</a>)
           {i18n(cfg.locale).components.footer.createdWith}{" "}
           <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>

@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "📡 Radar-MMS Code Conventions",
+    pageTitle: "📡 Radar-MMS Guidelines",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "ru-RU",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "whs31.github.io/guidelines/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
