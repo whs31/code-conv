@@ -150,8 +150,15 @@
   "lastOpenFiles": [
     "C++/formatting.md",
     "C++/naming.md",
-    "index.md",
+    "C++/lang-features.md",
+    "C++/functions.md",
+    "C++/cxx-version.md",
+    "C++/scoping.md",
+    "C++/headers.md",
+    "Conan/intro.md",
+    "Conan/artifactory.md",
     "CMake/commands.md",
-    "C++/cxx-version.md"
+    "CMake/intro.md",
+    "index.md"
   ]
 }
