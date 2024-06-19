@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CMake/standalone.md",
+                "file": "CMake/tests.md",
                 "mode": "source",
                 "source": true
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CMake/standalone.md",
+                "file": "CMake/common-tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CMake/standalone.md",
+                "file": "CMake/tests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CMake/standalone.md",
+                "file": "CMake/tests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CMake/standalone.md"
+                "file": "CMake/tests.md"
               }
             }
           }
@@ -164,12 +164,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92e5a5197cbf6dad",
+  "active": "040a8864387946b2",
   "lastOpenFiles": [
+    "CMake/common-tips.md",
+    "CMake/tests.md",
     "CMake/intro.md",
     "CMake/standalone.md",
     "CMake/commands.md",
-    "CMake/common-tips.md",
     "Conan/artifactory.md",
     "Conan/intro.md",
     "C++/cxx-version.md",
