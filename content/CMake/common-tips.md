@@ -90,8 +90,27 @@ set(PROJECT_NAMESPACE "math::")
 > Этот процесс можно автоматизировать. Подробнее: ((здесь будет ссылка)).
 
 #### Стандарт С, С++
-Всегда указывайте [[../C++/cxx-version|минимальный стандарт С++]], который используется в проекте. Корректный способ сделать это:
+Всегда указывайте [[../C++/cxx-version|минимальный стандарт С++]], который используется в проекте. Наиболее правильный способ сделать:
 ```cmake
+include(CMakePrintHelpers)
+...
+set_target_properties(${PROJECT_NAME} PROPERTIES
+  CXX_STANDARD 20
+  CXX_STANDARD_REQUIRED ON
+  CXX_EXTENSIONS OFF
+  POSITION_INDEPENDENT_CODE ON
+)
+
+cmake_print_properties(TARGETS ${PROJECT_NAME} PROPERTIES
+  CXX_STANDARD
+  CXX_STANDARD_REQUIRED
+  CXX_EXTENSIONS
+  POSITION_INDEPENDENT_CODE
+)  
+```
+
+Так же корректным способом является:
+```
 if(NOT CMAKE_CXX_STANDARD)      # не будет перезаписывать уже заданный стандарт
   set(CMAKE_CXX_STANDARD 20)    # c++20
   set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -99,7 +118,7 @@ if(NOT CMAKE_CXX_STANDARD)      # не будет перезаписывать �
 
   # опциональный вывод стандарта в консоль
   message(STATUS "[${PROJECT_NAME}] c++ standard: ${CMAKE_CXX_STANDARD}")
-endif()  
+endif()
 ```
 
 Также хорошей практикой будет позаботиться о пользователях MSVC, добавив следующую строчку после указания стандарта:
@@ -123,7 +142,24 @@ message(STATUS "[${PROJECT_NAME}] fpic status: ${CMAKE_POSITION_INDEPENDENT_CODE
 
 ##### MOC/RCC
 В проектах, использующих Qt, необходимо явно включать препроцессинг с помощью утилит `moc`, `rcc` и, опционально, `uic`.
-Для этого используйте следующие опции:
+Наиболее правильный способ сделать:
+```cmake
+include(CMakePrintHelpers)
+...
+set_target_properties(${PROJECT_NAME} PROPERTIES
+  AUTORCC ON
+  AUTOMOC ON
+  AUTOUIC ON
+)
+
+cmake_print_properties(TARGETS ${PROJECT_NAME} PROPERTIES
+  AUTORCC
+  AUTOMOC
+  AUTOUIC
+)  
+```
+
+Так же корректным способом является:
 ```cmake
 set(CMAKE_AUTOMOC ON)    # включает moc
 set(CMAKE_AUTORCC ON)    # включает rcc
@@ -226,15 +262,15 @@ execute_process(
 ##### Qt
 ```cmake
 find_package(QT NAMES Qt5 COMPONENTS Core) # Qt5 можно заменить на Qt6
-find_package(Qt5 COMPONENTS 
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS 
   Core
   Quick
   Network
 )
 # доступные цели линковки:
-# - Qt5::Core
-# - Qt5::Quick
-# - Qt5::Network
+# - Qt${QT_VERSION_MAJOR}::Core
+# - Qt${QT_VERSION_MAJOR}::Quick
+# - Qt${QT_VERSION_MAJOR}::Network
 ```
 
 > [!attention]
