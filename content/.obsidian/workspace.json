@@ -166,9 +166,9 @@
   },
   "active": "92e5a5197cbf6dad",
   "lastOpenFiles": [
-    "CMake/commands.md",
-    "CMake/standalone.md",
     "CMake/intro.md",
+    "CMake/standalone.md",
+    "CMake/commands.md",
     "CMake/common-tips.md",
     "Conan/artifactory.md",
     "Conan/intro.md",
