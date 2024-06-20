@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CMake/intro.md",
+                "file": "CMake/common-tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,20 +166,20 @@
   },
   "active": "040a8864387946b2",
   "lastOpenFiles": [
-    "Conan/artifactory.md",
-    "Conan/intro.md",
-    "CMake/intro.md",
+    "CMake/commands.md",
     "CMake/common-tips.md",
+    "CMake/intro.md",
     "CMake/tests.md",
     "CMake/standalone.md",
-    "CMake/commands.md",
+    "C++/intro.md",
+    "C++/lang-features.md",
+    "C++/naming.md",
+    "C++/scoping.md",
+    "Conan/artifactory.md",
+    "Conan/intro.md",
     "C++/cxx-version.md",
     "index.md",
     "Protobuf & gRPC/codegen.md",
-    "C++/intro.md",
-    "C++/lang-features.md",
-    "C++/scoping.md",
-    "C++/naming.md",
     "C++/headers.md",
     "C++/functions.md",
     "C++/formatting.md"

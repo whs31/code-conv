@@ -1,3 +1,8 @@
+---
+title: 3.1 CMake - Исполняемый файл библиотеки
+tags:
+  - cmake
+---
 ### Тесты
 
 ##### Для написания тестов мы используем фреймворк [GTest](https://github.com/google/googletest).
