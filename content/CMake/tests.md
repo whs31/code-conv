@@ -1,5 +1,5 @@
 ---
-title: 3.1 CMake - Тесы для библиотеки
+title: 3.2 CMake - Тесы для библиотеки
 tags:
   - cmake
 ---
